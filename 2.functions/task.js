@@ -93,4 +93,4 @@ function makeWork(arrOfArr, func) {
     }
   }
   return maxWorkerResult;
-}s
+}
