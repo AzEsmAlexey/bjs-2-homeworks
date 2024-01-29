@@ -16,10 +16,11 @@ Student.prototype.addMarks = function(...marks) {
 }
 
 Student.prototype.getAverage = function() {
-  if (this.marks.length === 0) {
+  if (!this.marks || !this.marks.length) {
     return 0;
   }
-  this.marks.reduce((acc, item) => acc + item, 0) / this.marks.length;
+  this.average = this.marks.reduce((acc, item) => acc + item, 0) / this.marks.length;
+  return this.average;
 }
 
 Student.prototype.exclude = function(reason) {
@@ -38,4 +39,5 @@ console.log(student1);
 let student2 = new Student("Артём", "мужской", 25);
 student2.setSubject("Geometry");
 student2.exclude('плохая учёба');
+student1.addMarks(4, 5, 4, 5);
 console.log(student2);
