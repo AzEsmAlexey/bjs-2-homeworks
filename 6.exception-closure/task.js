@@ -46,7 +46,7 @@ function getTriangle(a, b, c) {
       get perimeter() {
         "Ошибка! Треугольник не существует";
       },
-      get Area() {
+      get area() {
         "Ошибка! Треугольник не существует";
       }
     }
