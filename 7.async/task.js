@@ -44,7 +44,7 @@ class AlarmClock {
           item.canCall = false;
         }
       })
-    }, 1000);
+    }, 1000)
   }
 
   stop() {
